@@ -23,7 +23,7 @@ v2f vert (appdata_base v){
    o.pos = UnityObjectToClipPos (v.vertex);
    o.scrPos=ComputeScreenPos(o.pos);
    //for some reason, the y position of the depth texture comes out inverted
-   o.scrPos.y = 1 - o.scrPos.y;
+   //o.scrPos.y = 1 - o.scrPos.y;
    return o;
 }
 
